@@ -1,0 +1,5 @@
+<form action="{% url 'home' %}" method="post" enctype="multipart/form-data" novalidate>
+    {% csrf_token %}
+    {{fm.as_p}}
+    <button type="submit">Register</button>
+</form>
